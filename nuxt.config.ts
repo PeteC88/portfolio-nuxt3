@@ -22,6 +22,5 @@ export default defineNuxtConfig({
     storesDirs: ['./stores/**', './custom-folder/stores/**'],
   },
   build:{
-    transpile:["three"]
-}
+    transpile:["three", '@fortawesome/fontawesome-svg-core'],}
 })
