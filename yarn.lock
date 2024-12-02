@@ -686,15 +686,8 @@
 
 "@fortawesome/fontawesome-common-types@6.7.1":
   version "6.7.1"
-  resolved "https://registry.npmjs.org/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.7.1.tgz"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.7.1.tgz#6201640f39fdcf8e41cd9d1a92b2da3a96817fa4"
   integrity sha512-gbDz3TwRrIPT3i0cDfujhshnXO9z03IT1UKRIVi/VEjpNHtSBIP2o5XSm+e816FzzCFEzAxPw09Z13n20PaQJQ==
-
-"@fortawesome/fontawesome-svg-core@^6.5.1":
-  version "6.7.1"
-  resolved "https://registry.npmjs.org/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.7.1.tgz"
-  integrity sha512-8dBIHbfsKlCk2jHQ9PoRBg2Z+4TwyE3vZICSnoDlnsHA6SiMlTwfmW6yX0lHsRmWJugkeb92sA0hZdkXJhuz+g==
-  dependencies:
-    "@fortawesome/fontawesome-common-types" "6.7.1"
 
 "@fortawesome/fontawesome-svg-core@^6.7.1":
   version "6.7.1"
@@ -705,15 +698,8 @@
 
 "@fortawesome/free-brands-svg-icons@^6.7.1":
   version "6.7.1"
-  resolved "https://registry.npmjs.org/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-6.7.1.tgz"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-6.7.1.tgz#1c1bbbac3ab897d02322b18fbbdf4d9b67ec1619"
   integrity sha512-nJR76eqPzCnMyhbiGf6X0aclDirZriTPRcFm1YFvuupyJOGwlNF022w3YBqu+yrHRhnKRpzFX+8wJKqiIjWZkA==
-  dependencies:
-    "@fortawesome/fontawesome-common-types" "6.7.1"
-
-"@fortawesome/free-regular-svg-icons@^6.7.1":
-  version "6.7.1"
-  resolved "https://registry.npmjs.org/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-6.7.1.tgz"
-  integrity sha512-e13cp+bAx716RZOTQ59DhqikAgETA9u1qTBHO3e3jMQQ+4H/N1NC1ZVeFYt1V0m+Th68BrEL1/X6XplISutbXg==
   dependencies:
     "@fortawesome/fontawesome-common-types" "6.7.1"
 
@@ -996,7 +982,7 @@
     which "^3.0.1"
     ws "^8.18.0"
 
-"@nuxt/icon@^1.6.1":
+"@nuxt/icon@1.9.0", "@nuxt/icon@^1.6.1":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@nuxt/icon/-/icon-1.9.0.tgz#1559c8188fd4f2059fb8de9bbebb1cce220cc5ba"
   integrity sha512-UDPrYwDVq7FvU9ENG8dDsI3RmqMmncmKyFQMD3BPJvh4DFGgmBVRCno8dtAyXYms6Vymz4kXQY7edpM93LZiMA==
@@ -3046,14 +3032,6 @@
     micromatch "^4.0.8"
     node-gyp-build "^4.2.2"
     resolve-from "^5.0.0"
-
-"@vesp/nuxt-fontawesome@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/@vesp/nuxt-fontawesome/-/nuxt-fontawesome-1.1.0.tgz"
-  integrity sha512-Ze3/SxGZMGCp5VvRtXXpnzyWzaCBvyDPB9nFZK3UrScOdjivX8mb+5l55hKhz+trNAYERs455J0xiQEHWq72DA==
-  dependencies:
-    "@fortawesome/fontawesome-svg-core" "^6.5.1"
-    "@nuxt/kit" "^3.13.0"
 
 "@vitejs/plugin-vue-jsx@^4.1.0":
   version "4.1.1"
