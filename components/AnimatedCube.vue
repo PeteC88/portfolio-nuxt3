@@ -21,7 +21,7 @@ onMounted(()=>{
         <canvas class="canvas"></canvas>
       </div>
       <h3 class="canvas__text">
-        <i>tourne-moi</i
+        <i>{{ $t('rotateMe') }}</i
         ><font-awesome
           :icon="['fas', 'arrows-spin']"
           spin

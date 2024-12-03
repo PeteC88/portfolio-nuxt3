@@ -2,13 +2,13 @@
   <section class="footer">
     <div class="footer__credits">
       <p>
-        Image on the right side of the banner by
+        {{ $t('footerImgDisclaimer1') }}
         <a
           href="https://www.freepik.com/free-vector/code-typing-concept-illustration_10259340.htm#query=coding&position=12&from_view=keyword&track=sph"
           >storyset</a
         >
-        on Freepik and
-        <a href="https://storyset.com/work">Work illustrations by Storyset</a>
+        {{ $t('footerImgDisclaimer2') }}
+        <a href="https://storyset.com/work">{{ $t('footerImgDisclaimer3') }} Storyset</a>
       </p>
       <!--  https://www.freepik.com/free-vector/code-typing-concept-illustration_10259340.htm#query=coding&position=12&from_view=keyword&track=sph -->
     </div>

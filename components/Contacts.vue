@@ -1,6 +1,6 @@
 <template>
   <div class="contacts" id="contacts">
-    <h1>Restons en contact</h1>
+    <h1>{{ $t('stayInContact') }}</h1>
     <div class="contacts__logos">
       <div class="contacts__logo">
         <a href="https://fr.linkedin.com/in/pietro-ciccarello" target="_blank"
@@ -24,30 +24,46 @@
         /></a>
         <p>GitHub</p>
       </div>
-      <div class="contacts__logo">
-        <a
-          :href="`/cv/CVPietroCiccarello.pdf`"
-          download="CV Pietro Ciccarello"
-          target="_blank"
-        >
-          <ResumeLogoSvg class="resume-icon" />
-          <p>Télécharge mon CV</p>
+      <div class="contacts__logo cv__logo">
+          <ResumeLogoSvg class="resume-icon" @click="openMenu" />
+          <div class="lang-cv-buttons">
+            <a
+          :href="`/cv/CV_Pietro_Ciccarello_FR.pdf`"
+          download="CV Pietro Ciccarello FR"
+          target="_blank">
+          <div class="fr-cv cv-button" :class="{'cv-button--active': isCvMenuOpen}">
+            <img src="/imgs/round-flags/france-flag-circular-17753.png" alt="download french cv">
+          </div>
+          </a>
+          <a
+          :href="`/cv/CV_Pietro_Ciccarello_EN.pdf`"
+          download="CV Pietro Ciccarello EN"
+          target="_blank">
+          <div class="en-cv cv-button"  :class="{'cv-button--active': isCvMenuOpen}">
+            <img src="/imgs/round-flags/uk-flag-circular-17883.png" alt="download english cv">
+          </div>
         </a>
+        <a :href="`/cv/CV_Pietro_Ciccarello_IT.pdf`"
+          download="CV Pietro Ciccarello IT"
+          target="_blank">
+          <div class="it-cv cv-button" :class="{'cv-button--active': isCvMenuOpen}">
+            <img src="/imgs/round-flags/italy-flag-circular-17751.png" alt="download italian cv">
+          </div>
+          </a>
+          </div>
+          
+          <p>{{ $t('DowloadCV') }}</p>
       </div>
     </div>
   </div>
 </template>
 <script setup lang="ts">
-//import { mapGetters, mapState } from "vuex";
+
 import ResumeLogoSvg from "./ResumeLogoSvg.vue";
 
-/* export default {
-  components: {
-    ResumeLogoSvg,
-  },
-  computed: {
-    ...mapState(["publicPath"]),
-    ...mapGetters(["resumeImage"]),
-  },
-}; */
+let isCvMenuOpen = ref(false);
+
+const openMenu = ()=>{
+  isCvMenuOpen.value = !isCvMenuOpen.value;
+}
 </script>

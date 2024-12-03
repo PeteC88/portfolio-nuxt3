@@ -2,7 +2,9 @@
 
 import {computed, ref, onMounted} from 'vue';
 import { useActivityStore } from '../stores/activitiesStore'
+
 const store = useActivityStore();
+
 
 onMounted(async ()=>{
   await store.getActivity();
@@ -12,8 +14,9 @@ let isSliding = ref(false);
 let oldActivity = ref({});
 
 const activity = computed(()=>{
- return store.activity;
-})
+return store.activity;
+}) 
+
 
 const slideAnimation =()=> {
       isSliding.value = true;
@@ -35,10 +38,9 @@ const slideAnimation =()=> {
 
 <template>
   <div class="activity" id="API">
-      <h1>Moment API</h1>
+      <h1>{{$t('apiMenu')}}</h1>
       <h5>
-        Que serait un développeur sans les API ? Si tu cherches une activité à
-        faire, prends inspiration en cliquant sur le bouton en bas.
+        {{$t('momentApiText')}}
       </h5>
       <div class="activity__wrapper">
         <div class="activity__carousel">
@@ -66,7 +68,7 @@ const slideAnimation =()=> {
           </div>
         </div>
         <button @click="slideAnimation" :disabled="isSliding">
-          Nouvelle activité
+         {{ $t('newActivity') }}
         </button>
       </div>
     </div>

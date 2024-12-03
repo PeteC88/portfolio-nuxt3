@@ -15,7 +15,7 @@
           <p>{{ props.descriptionBack }}</p>
         </div>
         <div class="back__languages">
-          <h4>Langages utilisés</h4>
+          <h4>{{ $t('competencesLanguages') }}</h4>
           <ul>
             <li v-for="language in props.languagesUsed" :key="language">
               {{ language }}
@@ -25,14 +25,14 @@
 
         <button>
           <a @click.stop :href="props.siteLink" target="_blank"
-            >Visite le site <font-awesome :icon="['fas', 'eye']"
+            >{{ $t('visitSite') }} <font-awesome :icon="['fas', 'eye']"
           /></a>
         </button>
       </div>
     </div>
     <div class="card__instruction">
       <p>
-        Clique sur la vignette pour voir plus d'infos
+        {{ $t('moreInfoText') }}
         <span
           ><font-awesome :icon="['fas', 'hand-point-up']" bounce
         /></span>

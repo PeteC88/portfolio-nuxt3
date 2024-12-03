@@ -1,6 +1,6 @@
 <template>
   <div class="competences" id="compétences">
-    <h1 class="competences__title">Mes compétences</h1>
+    <h1 class="competences__title">{{ $t('myCompetences') }}</h1>
     <ClientOnly >
       <AnimatedCube />
     </ClientOnly>
@@ -11,24 +11,24 @@
           <font-awesome :icon="['fas', 'laptop-code']" />
         </div>
         <div class="competences__texts">
-          <h4>Développeur Front</h4>
-          <p>Création de pages web et correction de bugs</p>
+          <h4>{{ $t('competencesTitleCard1') }}</h4>
+          <p>{{ $t('competencesTextCard1') }}</p>
 
-          <h4>Langages utilisés</h4>
+          <h4>{{ $t('competencesLanguages') }}</h4>
 
           <ul>
-            <li>HTML 5</li>
-            <li>CSS 3</li>
-            <li>SASS/SCSS</li>
-            <li>Bootstrap - Tailwind</li>
-            <li>JavaScript</li>
-            <li>Vue.Js</li>
-            <li>Nuxt.JS</li>
+            <li>{{ $t('html') }}</li>
+            <li>{{ $t('css') }}</li>
+            <li>{{ $t('sass') }}</li>
+            <li>{{ $t('bootstrapTailwind') }}</li>
+            <li>{{ $t('js') }}</li>
+            <li>{{ $t('vue') }}</li>
+            <li>{{ $t('nuxt') }}</li>
           </ul>
-          <h4>Outils utilisés</h4>
+          <h4>{{ $t('tools') }}</h4>
           <ul>
-            <li>GitHub</li>
-            <li>Trello</li>
+            <li>{{ $t('github') }}</li>
+            <li>{{ $t('trello') }}</li>
           </ul>
         </div>
       </div>
@@ -37,21 +37,21 @@
           <font-awesome :icon="['fas', 'laptop']" />
         </div>
         <div class="competences__texts">
-          <h4>Webmaster</h4>
-          <p>Création de pages web et intégration de contenu</p>
+          <h4>{{ $t('competencesTitleCard2') }}</h4>
+          <p>{{ $t('competencesTextCard2') }}</p>
 
-          <h4>CMS utilisés</h4>
+          <h4>{{ $t('cms') }}</h4>
 
           <ul>
-            <li>SiteCore</li>
-            <li>AEM</li>
-            <li>Content Stack</li>
+            <li>{{ $t('sitecore') }}</li>
+            <li>{{ $t('aem') }}</li>
+            <li>{{ $t('contentStack') }}</li>
           </ul>
-          <h4>Outils utilisés</h4>
+          <h4>{{ $t('tools') }}</h4>
           <ul>
-            <li>Jira</li>
-            <li>DigitalCore</li>
-            <li>Trados (création de settings avec regex)</li>
+            <li>{{ $t('jira') }}</li>
+            <li>{{ $t('digitalCore') }}</li>
+            <li>{{ $t('trados') }}</li>
           </ul>
         </div>
       </div>

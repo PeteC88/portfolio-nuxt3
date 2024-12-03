@@ -127,7 +127,7 @@ const mouseUpHandler = ()=> {
           @touchstart.prevent="touchStartHandler"
         >
           <div class="resize__arrows">
-            <div class="resize__arrows-text">déplace moi</div>
+            <div class="resize__arrows-text">{{ $t('moveMe') }}</div>
             <div class="resize__arrows-left">
               <font-awesome :icon="['fas', 'arrow-left']" />
             </div>
@@ -141,8 +141,8 @@ const mouseUpHandler = ()=> {
             &lt;<span class="title-1">Hello</span>
             <span class="title-2">World!</span> /&gt;
           </h1>
-          <p>Je suis Pietro Ciccarello,</p>
-          <p>développeur web front.</p>
+          <p>{{ $t('presentation') }}</p>
+          <p>{{ $t('presentation2') }}</p>
         </div>
         <div class="resize__function-img">
           <img
@@ -158,8 +158,8 @@ const mouseUpHandler = ()=> {
             &lt;<span class="title-1 title-1-back">Hello</span>
             <span class="title-2 title-2-back">World!</span> /&gt;
           </h1>
-          <p>Je suis Pietro Ciccarello,</p>
-          <p>développeur web front.</p>
+          <p>{{ $t('presentation') }}</p>
+          <p>{{ $t('presentation2') }}</p>
         </div>
         <img
           src="/imgs/banner/Code-typing-bro-transparent-background.svg"

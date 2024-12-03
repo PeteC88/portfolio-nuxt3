@@ -100,7 +100,18 @@ $large-desktop: 1800px;
   z-index: 1000;
  }
 
-
+.lang-switcher{
+  display: flex;
+  position: absolute; 
+  top: 8px;
+  right: 1rem;
+}
+.flag{
+  padding: 0 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
   //menu burger button
 
   .burger {
@@ -290,6 +301,10 @@ $large-desktop: 1800px;
         height: 20dvh;
       }
 
+/*       @media screen and (min-width: 600px) and (max-width: 790px) {
+        height: 30dvh;
+      } */
+
       &--active{
         transform: translateX(0);
       }
@@ -370,6 +385,46 @@ $large-desktop: 1800px;
         }
       }
     }
+
+    .menu-cv__logo{
+      position: relative;
+    }
+    .menu-cv-button{
+      position: absolute;
+      top: 0;
+  
+      & img{
+        width: 35px;
+        transform: scale(0);
+      }
+    }
+  
+    .menu-cv-button--active{
+      & img{
+        transform: scale(1);
+        transform-origin: bottom;
+        transition: all 0.5s ease-out;
+      }
+    }
+  
+    .menu-cv-button--active.fr-cv{
+      left: -10px;
+      right: 0;
+      top: -45px;
+  
+    }
+  
+    .menu-cv-button--active.en-cv{
+      left: 120px;
+      right: 0;
+      top: -25px;
+    }
+  
+    .menu-cv-button--active.it-cv{
+      left: 120px;
+      right: 0;
+      top: 40px;
+  }
 
     //banner
     .banner{
@@ -1138,6 +1193,10 @@ $large-desktop: 1800px;
       width:77px;
       margin-bottom: 10px;
 
+      @include for-tablet-portrait-up(){
+        width:90px;
+      }
+
       
       
       &:hover{
@@ -1189,7 +1248,62 @@ $large-desktop: 1800px;
     
     }
   }
+  .resume-menu-button{
+    width: 100%;
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .cv__logo{
+    position: relative;
+    cursor: pointer;
+  }
+  .cv-button{
+    display: flex;
+    cursor: pointer;
 
+    & img{
+      width: 30px;
+      transform: scale(0);
+    }
+  }
+
+  .cv-button--active{
+    & img{
+      transform: scale(1);
+      transform-origin: bottom;
+      transition: all 0.5s ease-out;
+    }
+  }
+
+  .lang-cv-buttons{
+    position: absolute;
+    display: flex;
+    top: 110%;
+    width: 100%;
+    cursor: pointer;
+    justify-content: space-between;
+    & svg{
+      cursor: pointer;
+    }
+  }
+
+  .menu-lang-cv-buttons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: -19px;
+    left: 52px;
+    gap: 12px;
+    cursor: pointer;
+
+    & img{
+      width: 20px;
+    }
+  }
+
+  
   //footer
   .footer{
     position: relative;

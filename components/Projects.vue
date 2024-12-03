@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import {ref, computed} from 'vue';
-import { useProjectsSTore } from '../stores/projectsStore'
-const store = useProjectsSTore();
+import { useProjectsStore } from '../stores/projectsStore'
+const store = useProjectsStore();
 
 
 const  isCardFlipped = ref(false);
 
 const projectCards = computed(()=>{
-  return store.projectCards;
+  return store.translatedProjectCards;
 })
 
 const flipCard = (id:number)=>{
@@ -17,7 +17,7 @@ const flipCard = (id:number)=>{
 </script>
 <template>
   <section class="projects" id="projects">
-    <h1>Mes projets</h1>
+    <h1>{{ $t('myProjects') }}</h1>
     <div class="projects__cards">
       <CardTemplate
         v-for="card in projectCards"
